@@ -28,7 +28,7 @@ The game uses a **Zip** logic to pair hidden words with their answers:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/A-P08/Hangman-game.git](https://github.com/A-P08/Hangman-game.git)
+    git clone https://github.com/A-P08/Hangman-game.git
     ```
 2.  **Run the Script:**
     ```bash
