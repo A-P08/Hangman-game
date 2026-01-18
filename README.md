@@ -1,4 +1,4 @@
-# 🧩 Word Completion Game
+# 🧩 Hangman Game
 
 A lightweight, interactive terminal-based game written in Python. Players are challenged to guess the missing letters in a series of words within a limited number of attempts.
 
@@ -28,7 +28,7 @@ The game uses a **Zip** logic to pair hidden words with their answers:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/A-P08/word-guess-game.git](https://github.com/A-P08/word-guess-game.git)
+    git clone [https://github.com/A-P08/Hangman-game.git](https://github.com/A-P08/Hangman-game.git)
     ```
 2.  **Run the Script:**
     ```bash
