@@ -1,52 +1,45 @@
-Python Word Guessing Game
-A simple, interactive terminal-based game where players guess missing characters to complete words. This project demonstrates the use of Python loops, list manipulation, and the zip() function.
+# 🧩 Word Completion Game
 
-📋 Features
-Interactive Menu: Simple navigation to start or exit the game.
+A lightweight, interactive terminal-based game written in Python. Players are challenged to guess the missing letters in a series of words within a limited number of attempts.
 
-Limited Attempts: Players get 3 attempts per word to guess the correct missing character.
+---
 
-Dynamic Feedback: The game reveals the full word once a correct guess is made.
+## 🚀 Features
+* **Three Strikes Rule:** You get exactly 3 attempts per word.
+* **Live Feedback:** Tells you if your guess is right or wrong instantly.
+* **Automatic Scorecard:** Summarizes your performance (Correct vs. Wrong) at the end.
+* **Clean Loop:** Play as many rounds as you want or exit gracefully.
 
-Score Tracking: Displays the total number of correct and wrong answers at the end of each round.
+---
 
-🎮 How to Play
-Run the script: Execute the Python file in your terminal.
+## 🛠️ How It Works
 
-Select Start: Enter 1 to begin the game.
+The game uses a **Zip** logic to pair hidden words with their answers:
 
-Guess the Character: You will see a word with a missing letter (e.g., H_t).
+1.  **Word List:** `["H_t", "c_t", "r_d", "p_rk"]`
+2.  **Answer List:** `["o", "a", "e", "a"]`
+3.  **The Logic:** The script zips these together so the program knows exactly which character completes which word.
 
-Input your guess: Type the single character you think completes the word.
 
-Win/Loss: If you guess correctly within 3 tries, you move to the next word. If you fail all 3 tries, the correct answer is revealed, and it counts as a wrong guess.
 
-🛠️ Logic Overview
-The game uses three main lists to manage the data:
+---
 
-list1: Contains the words with underscores (placeholders).
+## 🎮 How to Run
 
-list2: Contains the corresponding correct characters.
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/A-P08/word-guess-game.git](https://github.com/A-P08/word-guess-game.git)
+    ```
+2.  **Run the Script:**
+    ```bash
+    python game.py
+    ```
+3.  **Input:** When prompted, enter `1` to start. Type your character guesses in lowercase.
 
-list3: Created using list(zip(list1, list2)) to pair the challenges with their solutions.
+---
 
-🚀 Getting Started
-Prerequisites
-Python 3.x installed on your machine.
-
-Installation
-Clone this repository:
-
-Bash
-
-git clone https://github.com/your-username/your-repo-name.git
-Navigate to the directory:
-
-Bash
-
-cd your-repo-name
-Run the game:
-
-Bash
-
-python game_filename.py
+## 📝 Example Gameplay
+```text
+1. 'H_t' :
+your answer player1: o
+Right guess! The word is 'Hot'
